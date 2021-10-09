@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23ffffff%22></rect><path d=%22M71.28 58.10L71.28 58.10Q71.28 62.69 69.89 66.38Q68.50 70.07 65.75 72.68Q63.01 75.29 59.05 76.73Q55.09 78.17 49.95 78.17L49.95 78.17Q44.83 78.17 40.87 76.73Q36.91 75.29 34.20 72.68Q31.51 70.07 30.11 66.38Q28.72 62.69 28.72 58.10L28.72 58.10L28.72 22.46Q29.16 22.28 30.11 22.05Q31.05 21.83 32.14 21.83L32.14 21.83Q36.01 21.83 36.01 25.16L36.01 25.16L36.01 57.47Q36.01 61.07 37.09 63.77Q38.17 66.47 40.01 68.31Q41.86 70.16 44.42 71.06Q46.98 71.96 49.95 71.96L49.95 71.96Q52.92 71.96 55.49 71.06Q58.05 70.16 59.90 68.31Q61.74 66.47 62.83 63.77Q63.91 61.07 63.91 57.47L63.91 57.47L63.91 22.46Q64.35 22.28 65.30 22.05Q66.25 21.83 67.33 21.83L67.33 21.83Q71.28 21.83 71.28 25.16L71.28 25.16L71.28 58.10Z%22 fill=%22%239013fe%22></path></svg>" />
+
+    <title>Umang</title>
+</head>
+
+<body>
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+                    viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="ml-3 text-xl">Umang</span>
+            </a>
+            <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+                <a class="mr-5 hover:text-blue-900 font-semibold text-lg">About</a>
+                <a class="mr-5 hover:text-blue-900 font-semibold text-lg"> </a>
+                <a class="mr-5 hover:text-blue-900 font-semibold text-lg" href="/login">Login</a>
+                <a class="mr-5 hover:text-blue-900 font-semibold text-lg"> </a>
+                <a class="mr-5 hover:text-blue-900 font-semibold text-lg">Our Team</a>
+            </nav>
+            <form action="/register" method="GET">
+                <button type="submit"
+                    class="transition duration-500 ease-in-out inline-flex items-center bg-gradient-to-r from-green-400 to-blue-500 border-0 py-1 px-3 focus:outline-none hover:from-pink-500 hover:to-yellow-500 rounded text-lg text-white-1000 mt-4 md:mt-0">
+                    Sign Up
+                    <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-4 h-4 ml-1 stroke-current text-white-1000" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </header>
+
+    <section class="text-gray-600 body-font bg-gradient-to-r from-purple-200 via-pink-50 to-white-1000 font-serif">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div
+                class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">your
+                    <br class="hidden lg:inline-block">
+                    <br class="hidden lg:inline-block"><i><b>self-transformation</b></i>
+                    <br class="hidden lg:inline-block">
+                    <br class="hidden lg:inline-block">journey.
+                    <br class="hidden lg:inline-block">
+                    <br class="hidden lg:inline-block">
+                    <br class="hidden lg:inline-block">
+                </h1>
+                <div class="flex justify-center">
+                    <form action="/register" method="GET">
+                        <button
+                            class="inline-flex text-white bg-blue-700 border-0 py-2 px-6 focus:outline-none hover:bg-blue-900 rounded text-lg">Get
+                            Started</button>
+                    </form>
+                </div>
+            </div>
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_jky21vxn.json"
+                    background="transparent" speed="0.25" style="width: 620px; height: 400px;" loop autoplay>
+                </lottie-player>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-gray-600 body-font bg-gradient-to-r from-pink-200 to-white-1000">
+        <div>
+            <h1 class="text-center font-extrabold text-4xl">About Us</h1>
+        </div>
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div
+                class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <p class="mb-8 leading-relaxed"> For the team at Umang ,there is nothing like
+                    <br class="hidden lg:inline-block"> witnessing the self- transformation that you
+                    <br class="hidden lg:inline-block"> go into. Umang offers you a chance to connect
+                    <br class="hidden lg:inline-block"> with yourself and improve your mental health.
+                    <br class="hidden lg:inline-block">
+                    <br class="hidden lg:inline-block"> Isnt it time to put yourself first and take
+                    <br class="hidden lg:inline-block"> care of your well-being?
+                </p>
+            </div>
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_9wjm14ni.json"
+                    background="transparent" speed="0.5" style="width: 620px; height: 400px;" loop autoplay>
+                </lottie-player>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-gray-600 body-font bg-gradient-to-r from-yellow-200 via-pink-100 to-blue-100">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <div>
+                    <h1 class="text-center font-extrabold text-4xl">Our Team</h1>
+                </div>
+                <br class="hidden lg:inline-block">
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn
+                    asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.
+                </p>
+            </div>
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+                            src="https://dummyimage.com/200x200">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-gray-900">Gurmehar Kaur Sibbal</h2>
+                            <h3 class="text-gray-500 mb-3">UI/UX Developer</h3>
+                            <p class="mb-4">I worked on the frontend design of this website</p>
+                            <span class="inline-flex">
+                                <a class="text-gray-500">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                    </svg>
+                                </a>
+                                <a class="ml-2 text-gray-500">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path
+                                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a class="ml-2 text-gray-500">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path
+                                            d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+                            src="https://dummyimage.com/201x201">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-gray-900">Manvi Gupta</h2>
+                            <h3 class="text-gray-500 mb-3">Web Developer</h3>
+                            <p class="mb-4">I have worked on the front end part of the website and integrated the yoga
+                                pose evaluator with the website.</p>
+                            <span class="inline-flex">
+                                <a class="text-gray-500">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                    </svg>
+                                </a>
+                                <a class="ml-2 text-gray-500">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path
+                                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a class="ml-2 text-gray-500">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path
+                                            d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+                            src="https://dummyimage.com/202x202">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-gray-900">Manan Jain</h2>
+                            <h3 class="text-gray-500 mb-3">Backend Web Developer</h3>
+                            <p class="mb-4">I have implemented......</p>
+                            <span class="inline-flex">
+                                <a class="text-gray-500">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                    </svg>
+                                </a>
+                                <a class="ml-2 text-gray-500">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path
+                                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a class="ml-2 text-gray-500">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path
+                                            d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+                            src="https://dummyimage.com/203x203">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-gray-900">Tarun Raj Kumar</h2>
+                            <h3 class="text-gray-500 mb-3">UI Developer</h3>
+                            <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.
+                            </p>
+                            <span class="inline-flex">
+                                <a class="text-gray-500">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                    </svg>
+                                </a>
+                                <a class="ml-2 text-gray-500">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path
+                                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a class="ml-2 text-gray-500">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path
+                                            d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>
