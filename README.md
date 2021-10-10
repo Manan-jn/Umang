@@ -31,8 +31,9 @@ We planned to create a platform that could detect a users mood through facial re
 
 clone the repository using 
 ```
-git clone https://github.com/Manan-jn/Umang.git 
+git clone  
 ```
+[https://github.com/Manan-jn/Umang.git]
 
 Setup the website
 1)cd Login
