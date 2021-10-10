@@ -1,7 +1,7 @@
 html{
-    background: #03001e;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #654ea3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     
     min-height: 1000px;
@@ -54,7 +54,7 @@ button{
     width: 50px;
     border-radius: 50%;
     border-color: transparent;
-    background-color: #A683E3;
+    background-color: #41295a;
     color: #fff;
     font-size: 30px;
     padding-bottom: 6px;
