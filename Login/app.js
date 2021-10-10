@@ -9,6 +9,7 @@ const passportLocalMongoose = require("passport-local-mongoose");
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const findOrCreate = require("mongoose-findorcreate");
 const TwitterStrategy = require("passport-twitter");
+const _ = require("lodash");
 
 const app = express();
 app.use(express.static("public"));
@@ -37,10 +38,32 @@ const userSchema = new mongoose.Schema({
     twitterId: String,
 });
 
+const itemsSchema = {
+    name: String
+};
 userSchema.plugin(passportLocalMongoose);
 userSchema.plugin(findOrCreate);
 
+const Item = mongoose.model("Item", itemsSchema);
 const User = new mongoose.model("User", userSchema);
+
+const default1 = new Item({
+    name: "Write your thoughts daily in a diary",
+});
+const default2 = new Item({
+    name: "Exercise for atleast 1.5 hrs a day"
+});
+const default3 = new Item({
+    name: "<-- Hit this checkbox to delete an item"
+});
+const defaultItems = [default1, default2, default3];
+
+const listSchema = {
+    name: String,
+    items: [itemsSchema]
+};
+const List = mongoose.model("List", listSchema);
+
 
 passport.use(User.createStrategy());
 
@@ -161,6 +184,101 @@ app.post("/login", function (req, res) {
                 res.redirect("/dashboard");
             });
         }
+    });
+});
+
+app.get("/journal", function (req, res) {
+
+    Item.find({}, function (err, foundItems) {
+        if (foundItems.length === 0) {
+            Item.insertMany(defaultItems, function (err) {
+                if (err) {
+                    console.log("Error");
+                }
+                else {
+                    console.log("Succesfully added");
+                }
+            })
+            res.redirect("/journal");
+        } else {
+            res.render("list", {
+                listTitle: "Mental health goals to achieve",
+                newItems: foundItems
+            });
+        }
+
+    });
+
+})
+
+app.post("/journal", function (req, res) {
+    let itemName = req.body.toDo;
+    const listName = req.body.list;
+
+    const userItem = new Item({
+        name: itemName
+    });
+
+    if (listName === "Mental health goals to achieve") {
+        userItem.save();
+        res.redirect("/journal");
+    } else {
+        List.findOne({ name: listName }, function (err, foundList) {
+            foundList.items.push(userItem);
+            foundList.save();
+            res.redirect("/journal" + listName);
+        });
+    }
+
+})
+
+app.post("/delete", function (req, res) {
+    let checkedItemId = req.body.checkbox;
+    const listName = req.body.listName;
+
+    if (listName === "Mental health goals to achieve") {
+        Item.findByIdAndRemove(checkedItemId, function (err) {
+            if (err) {
+                console.log("Error removing the checked item");
+            }
+            else {
+                console.log("Succesfully removed the checked item from the list");
+                res.redirect("/journal");
+            }
+        });
+    }
+    else {
+        List.findOneAndUpdate({ name: listName }, { $pull: { items: { _id: checkedItemId } } }, function (err, foundList) {
+            if (!err) {
+                res.redirect("/journal" + listName);
+            }
+        });
+    }
+
+});
+
+app.get("/:customListName", function (req, res) {
+    const customListName = _.capitalize(req.params.customListName);
+    List.findOne({ name: customListName }, function (err, foundList) {
+        if (!err) {
+            if (!foundList) {
+                //create a new list
+                const list = new List({
+                    name: customListName,
+                    items: defaultItems
+                });
+                list.save();
+                res.redirect("/journal" + customListName);
+            }
+            else {
+                //show the existing lis
+                res.render("list", {
+                    listTitle: foundList.name,
+                    newItems: foundList.items
+                });
+            }
+        }
+
     });
 });
 

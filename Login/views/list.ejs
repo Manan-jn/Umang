@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/journal.css">
+    <title>Mental Health goals to achieve</title>
+</head>
+
+<body>
+    <div class="box" id="heading">
+        <h1>
+            <%=listTitle%>
+        </h1>
+    </div>
+
+    <div class="box">
+        <ul>
+
+            <% newItems.forEach(function(item){ %>
+                <form action="/delete" method="POST">
+                    <div class="item">
+                        <input type="checkbox" name="checkbox" value="<%=item._id%>" onChange="this.form.submit()">
+                        <p>
+                            <%=item.name%>
+                        </p>
+                    </div>
+                    <input type="hidden" name="listName" value="<%= listTitle %>">
+                </form>
+                <% }) %>
+
+        </ul>
+        <form action="/journal" method="POST" class="item">
+            <input type="text" name="toDo" placeholder="Enter Goals" required autocomplete="off">
+            <button type="submit" name="list" value="<%=listTitle%>">+</button>
+        </form>
+    </div>
+</body>
+
+</html>
