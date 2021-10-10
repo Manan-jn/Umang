@@ -6,6 +6,7 @@ The goal of Umang is to help fight the stigma associated with mental health by g
 This project is currently in active development, as part of Hackharvard
 
 Feature List:
+
 -Record mood through facial recognition
 -Recommended music playlist based on mood
 -Recommendations of yoga postures
