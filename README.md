@@ -29,20 +29,24 @@ We planned to create a platform that could detect a users mood through facial re
 
 Local Setup:
 1)clone the repository using 
-```git clone https://github.com/Manan-jn/Umang.git 
+```
+git clone https://github.com/Manan-jn/Umang.git 
 ```
 
 Setup the website
 1)cd Login
 2)run 
-```npm install
+```
+npm install
 ```
 in the cmd
 3)run 
-```nodemon app.js
+```
+nodemon app.js
 ```
 to start the server at 
-```localhost:3000
+```
+localhost:3000
 ```
 
 Setup the emotion based recognition system
