@@ -73,6 +73,8 @@ Backend: Python,Javascript
 Server side> Nodejs, Passport js
 Database> MongoDB( for user login), MySQL(for mood based music recommendations)
 
+OpenCV
+
 ```
 
 ## 👷‍♂️ Team
