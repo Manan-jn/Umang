@@ -25,6 +25,24 @@
 <p>
 We planned to create a platform that could detect a users mood through facial recognition, recommends yoga poses to enlighten the mood and evaluates their correctness, helps user jot their thoughts in self care journal.</p>
 
+## 🧪 Deployment
+
+Local Setup:
+1)clone the repository using "git clone https://github.com/Manan-jn/Umang.git"
+
+Setup the website
+1)cd Login
+2)run "npm install" in the cmd
+3)run "nodemon app.js" to start the server at "localhost:3000"
+
+Setup the emotion based recognition system
+1) cd Emotion based music recommendation
+2) run "pip install Django==3.2.8"
+3) run "python -m venv .\venv" in the cmd
+4) run "venv\scripts\activate" in the cmd
+5) run "pip install -r requirements.txt" in the cmd
+6) run "python manage.py runserver" in the cmd 
+  
 
 ## 📥 Tech Stacks 
 
