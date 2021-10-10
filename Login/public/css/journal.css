@@ -1,8 +1,8 @@
 html{
-    background-color:#E4E9FD;
-    background-image: -webkit-linear-gradient(65deg,#A68323 50%,#E4E9FD 50%);
+    background-color:#000000;
+    
     min-height: 1000px;
-    font-family: helvetica, neue;
+    font-family: Poppins;
 }
 h1{
     color:#fff;
