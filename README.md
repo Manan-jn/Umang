@@ -1,4 +1,5 @@
-<p align="center"><img align="center" src="" height="128" /></p>
+<p align="center"><img align="center" src="![image](https://user-images.githubusercontent.com/77841499/136694810-1e4c511c-9877-400b-84da-be4c506c5514.png)
+" height="128" /></p>
 <h1 align="center">Welcome to Umang 💜</h1>
 <p align="center">
   <a href="" target="_blank">
