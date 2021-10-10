@@ -27,8 +27,9 @@ We planned to create a platform that could detect a users mood through facial re
 
 ## 🧪 Deployment
 
-Local Setup:
-1)clone the repository using 
+#Local Setup:
+
+clone the repository using 
 ```
 git clone https://github.com/Manan-jn/Umang.git 
 ```
