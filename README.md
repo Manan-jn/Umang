@@ -100,5 +100,5 @@ Give a ⭐️ if this project helped/inspired you!
 
 ## 📝 License
 
-Copyright © 2020 [Umang](https://github.com/Manan-jn/Umang).<br />
+Copyright © 2021 [Umang](https://github.com/Manan-jn/Umang).<br />
 This project is [MIT]() licensed.
