@@ -26,14 +26,15 @@
 We planned to create a platform that could detect a users mood through facial recognition, recommends yoga poses to enlighten the mood and evaluates their correctness, helps user jot their thoughts in self care journal.</p>
 
 ## 🧪 Deployment
+https://umang-home.herokuapp.com/
 
-#Local Setup:
+## Local Setup:
 
 clone the repository using 
 ```
-git clone  
+git clone https://github.com/Manan-jn/Umang.git
 ```
-[https://github.com/Manan-jn/Umang.git]
+
 
 Setup the website
 1)cd Login
@@ -100,5 +101,5 @@ Give a ⭐️ if this project helped/inspired you!
 
 ## 📝 License
 
-Copyright © 2020 [Umang](https://github.com/Manan-jn/Umang).<br />
+Copyright © 2021 [Umang](https://github.com/Manan-jn/Umang).<br />
 This project is [MIT]() licensed.
