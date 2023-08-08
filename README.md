@@ -26,7 +26,7 @@
 We planned to create a platform that could detect a users mood through facial recognition, recommends yoga poses to enlighten the mood and evaluates their correctness, helps user jot their thoughts in self care journal.</p>
 
 ## 🧪 Deployment
-https://umang-home.herokuapp.com/
+https://umang-go3f.onrender.com/
 
 ## Local Setup:
 
